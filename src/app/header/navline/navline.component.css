@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+    .navline {
+        height: 4px;
+    }
+}
+.navline {
+    height: 3.5px;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+.navline .nav-indicator-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    background-color: #f6b30a;
+}
+.nav-indicator {
+    position: absolute;
+top: -20px;
+}
+.nav-arrow {
+    color: #f6b30a;
+    font-size: 29px;
+    position: absolute;
+    top: 8px;
+    left: 484px;
+    
+}

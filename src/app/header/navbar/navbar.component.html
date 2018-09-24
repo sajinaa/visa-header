@@ -1,0 +1,128 @@
+<nav class="navbar navbar-expand-lg visa-nav" aria-label="Site" role="navigation">
+  <div class="container-fluid display">
+    <div class="navbar-header">
+      <a class="header-logo" id="visaLogo" href=""><img src="../assets/header/visa-Logo.png" class="visa-logo"
+          aria-label="Visa logo" alt="Visa logo" title="Visa logo"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-expanded="false" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <div class="navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav navbar-nav-desktop" role="menubar">
+        <li class="nav-item active" (click)="getMousePosition($event, 0)" role="menuitem">
+          <a href="#" class="nav-link" data-toggle="collapse" data-target="#payWithVisa" aria-expanded="false"
+            aria-label="Pay With Visa selected">Pay With Visa<span class="sr-only">(current)</span></a>
+          <div class="sub-nav-menu collapse" id="payWithVisa" aria-expanded="false">
+            <div class="sub-nav-menu-secondary">
+              <ul role="menu" class="nav nav-sub">
+                <li *ngFor="let item of menuItems" role="menuitem">
+                    <a href="#" class="sub-menu" target="_self"><img src="{{item.image}}" class="menu-logo">
+                      <span
+                        class="link-label">{{item.value}}</span></a>
+                  </li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <li class="nav-item" (click)="getMousePosition($event, 1)" role="menuitem">
+          <a href="#" class="nav-link" data-toggle="collapse" data-target="#partnerWithUs" aria-expanded="false"
+            aria-label="Partner With Us selected">Partner With Us</a>
+          <div class="sub-nav-menu collapse" id="partnerWithUs" aria-expanded="false">
+
+            <div class="sub-nav-menu-secondary">
+              <ul role="menu" class="nav nav-sub">
+                  <li *ngFor="let item of menuItems" role="menuitem">
+                      <a href="#" class="sub-menu" target="_self"><img src="{{item.image}}" class="menu-logo">
+                        <span
+                          class="link-label">{{item.value}}</span></a>
+                    </li>
+              </ul>
+            </div>
+
+          </div>
+        </li>
+        <li class="nav-item" (click)="getMousePosition($event, 2)" role="menuitem">
+            <a href="#" class="nav-link" data-toggle="collapse" data-target="#runYourBusiness" aria-expanded="false"
+            aria-label="Run Your Business">Run Your Business</a>
+            <div class="sub-nav-menu collapse" id="runYourBusiness" aria-expanded="false">
+                <div class="sub-nav-menu-secondary">
+                  <ul role="menu" class="nav nav-sub">
+                      <li *ngFor="let item of menuItems" role="menuitem">
+                          <a href="#" class="sub-menu" target="_self"><img src="{{item.image}}" class="menu-logo">
+                            <span
+                              class="link-label">{{item.value}}</span></a>
+                        </li>
+                  </ul>
+                </div>
+              </div>
+        </li>
+        <li class="nav-item" (click)="getMousePosition($event, 3)" role="menuitem">
+            <a href="#" class="nav-link" target="_self">Travel With Visa</a>
+        </li>
+        <li class="nav-item" (click)="getMousePosition($event, 4)">
+            <a href="#" class="nav-link" data-toggle="collapse" data-target="#learnAboutVisa" aria-expanded="false"
+            aria-label="Learn About Visa">Learn About Visa</a>
+            <div class="sub-nav-menu collapse" id="learnAboutVisa" aria-expanded="false">
+                <div class="sub-nav-menu-secondary">
+                  <ul role="menu" class="nav nav-sub">
+                      <li *ngFor="let item of menuItems" role="menuitem">
+                          <a href="#" class="sub-menu" target="_self"><img src="{{item.image}}" class="menu-logo">
+                            <span
+                              class="link-label">{{item.value}}</span></a>
+                        </li>
+                  </ul>
+                </div>
+              </div>
+        </li>
+        <li class="search-nav-item" id="secondhtml" role="menuitem">
+          <span class="sep-line"></span>
+          <i class="fa fa-search search-icon"></i>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="navline">
+    <div class="nav-indicator-bar">
+        <div class="nav-indicator">
+          <i class="fa fa-sort-up" #arrow [ngClass]="visible ? 'nav-arrow' : 'nav-arrow-transition'" [style.left.px]="getLeft()" [style.visibility]="visible && arrowVisibility ? 'visible' : 'hidden'"></i>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
