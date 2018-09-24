@@ -14,11 +14,18 @@ import { DOCUMENT } from '@angular/common';
 })
 export class NavbarComponent implements OnInit, AfterViewInit, OnChanges {
   menuItems = [
-    { value: "Checkout", image: "../assets/header/checkout.png", toggle: false},
-    { value: "Wheeled Robot", image: "../assets/header/find-card.png", toggle: false},
-    { value: "Offers", image: "../assets/header/offers.png", toggle: false},
-    { value: "Payments", image: "../assets/header/payments.png", toggle: false},
+    { value: "Visa Checkout", image: "../assets/header/checkout.png", toggle: false},
+    { value: "Find a Card", image: "../assets/header/find-card.png", toggle: false},
+    { value: "Visa Offers + Perks", image: "../assets/header/offers.png", toggle: false},
+    { value: "Contactless Payments", image: "../assets/header/payments.png", toggle: false},
     { value: "Payment Technology", image: "../assets/header/payment-tech.png", toggle: false}
+  ];
+  menuItemsPartner = [
+    { value: "Visa Ready", image: "../assets/header/visa-ready.png", toggle: false},
+    { value: "Payment Technology", image: "../assets/header/paymnt-technology.png", toggle: false},
+    { value: "Visa Developer", image: "../assets/header/visa-developer.png", toggle: false},
+    { value: "Inf for Partners", image: "../assets/header/info-partner.png", toggle: false},
+    { value: "Visa Performance Solutions", image: "../assets/header/visa-performance.png", toggle: false}
   ];
  // @ViewChild('NavlineComponent') NavlineComponent: ElementRef;
  // @ViewChild(NavlineComponent) alert: NavlineComponent;
